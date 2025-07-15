@@ -13,7 +13,7 @@ jobs:
     steps:
      - uses: actions/checkout@v4
        with:
-         ref: ${{ github.event.pull_request.head.sha }}
+         ref: ${{ github.event.pull_request.head_ref }}
      
      - name: Get Current Timestamp
        id: timestamp
